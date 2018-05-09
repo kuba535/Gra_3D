@@ -607,8 +607,9 @@ GameObject:
   - component: {fileID: 534402501}
   - component: {fileID: 534402500}
   - component: {fileID: 534402504}
-  - component: {fileID: 534402505}
   - component: {fileID: 534402506}
+  - component: {fileID: 534402507}
+  - component: {fileID: 534402505}
   m_Layer: 0
   m_Name: Player_cube
   m_TagString: Untagged
@@ -679,7 +680,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.01097846, y: 0.53, z: -3.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2077740996}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -706,10 +708,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 534402499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59193ab85f877449acfcd6977241cf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ae63a8ea6fbcea4d9bb6ce0c3bb589f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 54561806350593072, guid: e2d1b0816f5885a48b3b7edd6de32335, type: 2}
+  Bullet_Emitter: {fileID: 2077740995}
+  Bullet: {fileID: 1044609207059290, guid: e8fbad92e3c7c9c4a8258d82643d3c11, type: 2}
+  Bullet_Forward_Force: 1000
 --- !u!114 &534402506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,6 +726,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+--- !u!114 &534402507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534402499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae63a8ea6fbcea4d9bb6ce0c3bb589f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet_Emitter: {fileID: 0}
+  Bullet: {fileID: 0}
+  Bullet_Forward_Force: 0
 --- !u!1001 &599872724
 Prefab:
   m_ObjectHideFlags: 0
@@ -1692,3 +1710,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &2077740995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2077740996}
+  m_Layer: 0
+  m_Name: Bulet_Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077740996
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077740995}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.011, y: 0.303, z: 0.574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 534402503}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
