@@ -18,3 +18,7 @@ public class Shoot : MonoBehaviour
         }
     }
 }
+// Jest to na razie najbardziej podstawowa metoda wystrzału,
+// pociskiem może być cokolwiek. W dalszej wersji kule będą leciały w stronę która zostanie wskazana.
+// Dalej trzeba ogarnąć kolizje i inne ważne rzeczy typu zadawanie obrażeń przez kulę.
+
