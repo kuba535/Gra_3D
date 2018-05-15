@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet_Emitter: {fileID: 303769681}
-  Bullet: {fileID: 0}
+  Bullet: {fileID: 1489117499933988, guid: 618973d771676364e92c4ffa731afcaf, type: 2}
   Bullet_Forward_Force: 1000
 --- !u!1 &671782992
 GameObject:
