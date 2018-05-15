@@ -494,7 +494,6 @@ GameObject:
   - component: {fileID: 534402500}
   - component: {fileID: 534402504}
   - component: {fileID: 534402506}
-  - component: {fileID: 534402507}
   - component: {fileID: 534402505}
   m_Layer: 0
   m_Name: Player_cube
@@ -612,20 +611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!114 &534402507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 534402499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae63a8ea6fbcea4d9bb6ce0c3bb589f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bullet_Emitter: {fileID: 0}
-  Bullet: {fileID: 0}
-  Bullet_Forward_Force: 0
 --- !u!1001 &599872724
 Prefab:
   m_ObjectHideFlags: 0
@@ -1462,8 +1447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3af48354e5ca4a24c8c602e2b5a2d9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  nav: {fileID: 0}
 --- !u!1 &1633301173
 GameObject:
   m_ObjectHideFlags: 0
