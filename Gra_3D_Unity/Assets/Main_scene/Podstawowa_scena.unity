@@ -3053,7 +3053,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3a7c468af172b46b26d9bcc5fe11e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 448508411}
   smoothing: 5
 --- !u!1 &1555629166
 GameObject:
