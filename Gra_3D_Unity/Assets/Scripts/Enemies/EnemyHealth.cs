@@ -1,7 +1,7 @@
 ﻿using UnityEngine
 using System.Collections;
 
-public class zdrowie : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     //Punkty zdrowia
     public float health = 100.0f;
