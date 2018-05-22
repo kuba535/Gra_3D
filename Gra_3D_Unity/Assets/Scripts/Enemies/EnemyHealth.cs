@@ -1,4 +1,4 @@
-﻿using UnityEngine
+﻿/*using UnityEngine
 using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
@@ -34,12 +34,12 @@ public class EnemyHealth : MonoBehaviour
 
     }
 
-
+    
 
 
 
 }
-/*
+
 public class EnemyHealth : MonoBehaviour
 {
     public int startingHealth = 100;            // The amount of health the enemy starts the game with.
