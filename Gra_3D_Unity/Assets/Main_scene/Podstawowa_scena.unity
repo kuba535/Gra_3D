@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4686,7 +4686,6 @@ GameObject:
   - component: {fileID: 561925719}
   - component: {fileID: 561925718}
   - component: {fileID: 561925717}
-  - component: {fileID: 561925716}
   - component: {fileID: 561925715}
   m_Layer: 0
   m_Name: Enemy
@@ -4708,19 +4707,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
---- !u!114 &561925716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 561925714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb12d4b2b9f46d428eb4a970d81d7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  attackDamage: 10
 --- !u!195 &561925717
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6339,6 +6325,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 788418237}
+  - component: {fileID: 788418238}
   m_Layer: 0
   m_Name: Kobiety
   m_TagString: Untagged
@@ -6362,6 +6349,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &788418238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 788418236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb12d4b2b9f46d428eb4a970d81d7c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.5
+  attackDamage: 10
 --- !u!1001 &795780902
 Prefab:
   m_ObjectHideFlags: 0
@@ -11573,7 +11573,6 @@ GameObject:
   - component: {fileID: 1411172404}
   - component: {fileID: 1411172403}
   - component: {fileID: 1411172402}
-  - component: {fileID: 1411172401}
   - component: {fileID: 1411172400}
   m_Layer: 0
   m_Name: Enemy (2)
@@ -11595,19 +11594,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
---- !u!114 &1411172401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411172399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb12d4b2b9f46d428eb4a970d81d7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  attackDamage: 10
 --- !u!195 &1411172402
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15620,7 +15606,6 @@ GameObject:
   - component: {fileID: 2038665390}
   - component: {fileID: 2038665389}
   - component: {fileID: 2038665388}
-  - component: {fileID: 2038665387}
   - component: {fileID: 2038665386}
   - component: {fileID: 2038665392}
   m_Layer: 0
@@ -15643,19 +15628,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
---- !u!114 &2038665387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2038665385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb12d4b2b9f46d428eb4a970d81d7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  attackDamage: 10
 --- !u!195 &2038665388
 NavMeshAgent:
   m_ObjectHideFlags: 0
