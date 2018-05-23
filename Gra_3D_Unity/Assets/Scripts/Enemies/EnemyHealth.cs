@@ -1,5 +1,45 @@
-﻿using UnityEngine;
-/*
+﻿/*using UnityEngine
+using System.Collections;
+
+public class EnemyHealth : MonoBehaviour
+{
+    //Punkty zdrowia
+    public float health = 100.0f;
+
+    //zadanie obrażeń
+    public void getDamage(float damage)
+    {
+        //Odcięcie od zdrowia punktów obrażeń
+        health -= damage;
+
+        //Jeżeli zdrowie = 0 to śmierć konfidentom
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die() //umieranie przeciwnika
+        {
+        Destroy(gameObject);
+
+        }
+    public bool ifDead() //sprawwdzanie czy jest martwy
+    {
+        if (health <= 0)
+        {
+            return true;
+        }
+        return false;
+
+
+    }
+
+    
+
+
+
+}
+
 public class EnemyHealth : MonoBehaviour
 {
     public int startingHealth = 100;            // The amount of health the enemy starts the game with.
