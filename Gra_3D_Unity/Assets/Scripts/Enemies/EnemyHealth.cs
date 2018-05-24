@@ -1,7 +1,7 @@
-﻿using UnityEngine
+﻿/*using UnityEngine
 using System.Collections;
 
-public class zdrowie : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     //Punkty zdrowia
     public float health = 100.0f;
@@ -34,12 +34,12 @@ public class zdrowie : MonoBehaviour
 
     }
 
-
+    
 
 
 
 }
-/*
+
 public class EnemyHealth : MonoBehaviour
 {
     public int startingHealth = 100;            // The amount of health the enemy starts the game with.
