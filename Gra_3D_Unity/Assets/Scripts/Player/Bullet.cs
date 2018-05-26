@@ -5,8 +5,6 @@ public class Bullet : MonoBehaviour
 {
     public int Damage = 10;
 
-    
-
     GameObject enemy;
     New_Enemy_Health enemyHealth;
     
@@ -25,7 +23,7 @@ public class Bullet : MonoBehaviour
         }
         if(other.gameObject.tag != "Player" )
         {
-            Destroy(gameObject);
+
         }
     }
 
@@ -36,6 +34,5 @@ public class Bullet : MonoBehaviour
             enemyHealth.TakeDamage(Damage);
         }
 
-        Destroy(gameObject);
     }
 }

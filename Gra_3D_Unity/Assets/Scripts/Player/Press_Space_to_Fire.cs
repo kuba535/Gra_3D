@@ -10,16 +10,14 @@ public class Press_Space_to_Fire : MonoBehaviour
 
     public float Bullet_Forward_Force;
 
-    private void Update()
+  void Update()
     {
-    
-
         if (Input.GetKeyDown("space"))
         {
             GameObject Temporary_Bullet_Handler;
             Temporary_Bullet_Handler = Instantiate(Bullet, Bullet_Emitter.transform.position, Bullet.transform.rotation) as GameObject;
 
-           Temporary_Bullet_Handler.transform.Rotate(Vector3.left * 90);
+             Temporary_Bullet_Handler.transform.Rotate(Vector3.left * 90);
         
 
             Rigidbody Temporary_RigidBody;
