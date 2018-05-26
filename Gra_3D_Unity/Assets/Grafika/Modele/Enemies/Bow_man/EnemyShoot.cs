@@ -11,9 +11,11 @@ public class EnemyShoot : MonoBehaviour
 
     bool PlayerInRange;
 
+    private NavMeshAgent nav;
     private Transform player;
     private Animator anim;
     private SphereCollider sCollider;
+    private HashIDs hash;
 
     void Awake()
     {
@@ -21,6 +23,7 @@ public class EnemyShoot : MonoBehaviour
         anim = GetComponent<Animator>();
         sCollider = GetComponent<SphereCollider>();
         PlayerInRange = false;
+        nav = GetComponent<NavMeshAgent>();
     }
 
     void OnTriggerStay(Collider other)
@@ -33,8 +36,9 @@ public class EnemyShoot : MonoBehaviour
 
     void Update()
     {
-        if(PlayerInRange == true)
+        if(PlayerInRange == true && anim.GetFloat(hash.enemySpeed) == 0f && nav.speed == 0f)
         {
+
             GameObject TemporaryBulletHandler;
             TemporaryBulletHandler = Instantiate(Bullet, Bullet_Emtter.transform.position, Bullet.transform.rotation) as GameObject;
 

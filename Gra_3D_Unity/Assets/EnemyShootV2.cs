@@ -12,6 +12,7 @@ public class EnemyShootV2 : MonoBehaviour
     bool PlayerInRange;
 
     private Transform player;
+    private UnityEngine.AI.NavMeshAgent nav;
     private Animator anim;
     private SphereCollider sCollider;
 
@@ -39,6 +40,7 @@ public class EnemyShootV2 : MonoBehaviour
 
         if (PlayerInRange && timer >= timeBetweenAttacks)
         {
+
             GameObject TemporaryBulletHandler;
             TemporaryBulletHandler = Instantiate(Bullet, Bullet_Emtter.transform.position, Bullet.transform.rotation) as GameObject;
 
@@ -48,7 +50,7 @@ public class EnemyShootV2 : MonoBehaviour
             TemporaryRigidBody = TemporaryBulletHandler.GetComponent<Rigidbody>();
 
             TemporaryRigidBody.AddForce(transform.forward * Bullet_Forward_Force);
-
+  
             Destroy(TemporaryBulletHandler, 10.0f);
 
             timer = 0f;
