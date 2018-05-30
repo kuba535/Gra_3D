@@ -17,10 +17,9 @@ public class Bullet : MonoBehaviour {
 using UnityEngine;
 using System.Collections;
 
-public class Bullet : MonoBehaviour
-{
-    public int Damage = 10;
+public class Bullet : MonoBehaviour {
 
+<<<<<<< HEAD
 
 
     GameObject enemy;
@@ -55,3 +54,15 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 }
+=======
+	private float timer = 0.0f;
+
+	void Update() {
+		timer += Time.deltaTime;
+		if(timer > 4.0f) {
+			Destroy(gameObject);
+		}
+	}
+
+}
+>>>>>>> parent of 067e90b... Merge branch 'master' of https://github.com/kuba535/Gra_3D
