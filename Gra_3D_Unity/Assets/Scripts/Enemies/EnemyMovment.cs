@@ -16,6 +16,7 @@ public class EnemyMovment : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         //Sprawdzanie czy obiekt istnieje, żeby mógł podążać za graczem?
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
     }
 
     // Update is called once per frame
