@@ -23,7 +23,10 @@ public class Bullet : MonoBehaviour
         }
         if(other.gameObject.tag != "Player" )
         {
-            Destroy(gameObject);
+            if(other.gameObject.tag != "Bullet")
+            {
+                Destroy(gameObject);
+            }
         }
 
        

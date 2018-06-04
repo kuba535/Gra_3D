@@ -38,6 +38,7 @@ public class EnemyShoot : MonoBehaviour
     {
         if(PlayerInRange == true && anim.GetFloat(hash.enemySpeed) == 0f && nav.speed == 0f)
         {
+            anim.SetBool("IsShooting", true);
 
             GameObject TemporaryBulletHandler;
             TemporaryBulletHandler = Instantiate(Bullet, Bullet_Emtter.transform.position, Bullet.transform.rotation) as GameObject;

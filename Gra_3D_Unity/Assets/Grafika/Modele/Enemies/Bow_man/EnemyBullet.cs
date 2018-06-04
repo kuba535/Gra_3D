@@ -17,13 +17,16 @@ public class EnemyBullet : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Attack();
         }
-        if(other.gameObject.tag != "Enemy")
+        if (other.gameObject.tag != "Enemy")
         {
-            Destroy(gameObject);
+            if (other.gameObject.tag != "Bullet")
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -33,6 +36,7 @@ public class EnemyBullet : MonoBehaviour
         {
             playerHealth.TakeDamage(Damage);
         }
+
         Destroy(gameObject);
     }
 }

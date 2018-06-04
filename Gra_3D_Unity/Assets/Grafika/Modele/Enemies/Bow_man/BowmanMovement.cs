@@ -29,6 +29,7 @@ public class BowmanMovement : MonoBehaviour
         {
             StopAnimation();
             PlayerInRange = true;
+            anim.SetBool("IsShooting", true);
         }
     }
     void OnTriggerExit(Collider other)

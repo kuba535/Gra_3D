@@ -17,6 +17,9 @@ public class New_Enemy_Health : MonoBehaviour
         enemyMovement = GetComponent<EnemyMovment>();
 
         currentHealth = startingHealth;
+
+        isDead = false;
+        damaged = false;
     }
 
     void Update()

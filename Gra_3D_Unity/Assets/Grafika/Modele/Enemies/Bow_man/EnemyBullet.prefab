@@ -23,10 +23,10 @@ GameObject:
   - component: {fileID: 23079837687593050}
   - component: {fileID: 135883059668650788}
   - component: {fileID: 54396800195701904}
-  - component: {fileID: 114632616990031296}
+  - component: {fileID: 114815234273931904}
   m_Layer: 0
   m_Name: EnemyBullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114632616990031296
+--- !u!114 &114815234273931904
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
