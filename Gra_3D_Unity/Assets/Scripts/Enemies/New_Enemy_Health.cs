@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class New_Enemy_Health : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class New_Enemy_Health : MonoBehaviour
     bool isSinking;
     bool isDead;
     bool damaged;
+
+    [Header("Unity Stuff")]
+    public Image healthBar;
+
 
     void Awake()
     {
@@ -50,6 +55,7 @@ public class New_Enemy_Health : MonoBehaviour
         damaged = true;
 
         currentHealth -=amount;
+        healthBar.fillAmount = currentHealth / 100f;
 
         if(currentHealth <= 0)
         {
