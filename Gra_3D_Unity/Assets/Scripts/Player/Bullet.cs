@@ -6,11 +6,8 @@ public class Bullet : MonoBehaviour
     public int Damage = 10;
 
     New_Enemy_Health enemyHealth;
-    
-    void Awake()
-    {
 
-    }
+
 
     void OnCollisionEnter(Collision other)
     {

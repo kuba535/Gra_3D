@@ -7,7 +7,7 @@ public class EnemyShootV2 : MonoBehaviour
     public GameObject Bullet_Emtter;
     public GameObject Bullet;
     public float Bullet_Forward_Force;
-    public float timeBetweenAttacks = 5f;
+    public float timeBetweenAttacks = 10f;
     New_Enemy_Health enemyHealth;
 
     bool PlayerInRange;
