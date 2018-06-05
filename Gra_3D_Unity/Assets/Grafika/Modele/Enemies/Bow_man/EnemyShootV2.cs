@@ -8,6 +8,7 @@ public class EnemyShootV2 : MonoBehaviour
     public GameObject Bullet;
     public float Bullet_Forward_Force;
     public float timeBetweenAttacks = 5f;
+    New_Enemy_Health enemyHealth;
 
     bool PlayerInRange;
 
@@ -24,6 +25,7 @@ public class EnemyShootV2 : MonoBehaviour
         anim = GetComponent<Animator>();
         sCollider = GetComponent<SphereCollider>();
         PlayerInRange = false;
+        enemyHealth = GetComponent<New_Enemy_Health>();
     }
 
     void OnTriggerStay(Collider other)
@@ -38,7 +40,7 @@ public class EnemyShootV2 : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (PlayerInRange && timer >= timeBetweenAttacks)
+        if (PlayerInRange && timer >= timeBetweenAttacks && enemyHealth.currentHealth > 0)
         {
 
             GameObject TemporaryBulletHandler;

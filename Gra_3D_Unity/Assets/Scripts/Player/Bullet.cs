@@ -5,13 +5,11 @@ public class Bullet : MonoBehaviour
 {
     public int Damage = 10;
 
-    GameObject enemy;
     New_Enemy_Health enemyHealth;
     
     void Awake()
     {
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
-        enemyHealth = enemy.GetComponent<New_Enemy_Health>();
+
     }
 
     void OnCollisionEnter(Collision other)
@@ -19,6 +17,7 @@ public class Bullet : MonoBehaviour
 
         if (other.gameObject.tag == "Enemy")
         {
+            enemyHealth = other.gameObject.GetComponent<New_Enemy_Health>();
             Attack();
         }
         if(other.gameObject.tag != "Player" )
@@ -36,6 +35,7 @@ public class Bullet : MonoBehaviour
     {
         if (enemyHealth.currentHealth > 0)
         {
+
             enemyHealth.TakeDamage(Damage);
         }
 

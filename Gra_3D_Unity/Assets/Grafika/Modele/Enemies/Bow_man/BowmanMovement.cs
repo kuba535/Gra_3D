@@ -10,6 +10,7 @@ public class BowmanMovement : MonoBehaviour
     private Animator anim;
     private HashIDs hash;
     private SphereCollider sCollider;
+    New_Enemy_Health enemyHealth;
     private bool PlayerInRange;
 
 
@@ -21,6 +22,7 @@ public class BowmanMovement : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         hash = GameObject.FindGameObjectWithTag("GameController").GetComponent<HashIDs>();
         PlayerInRange = false;
+        enemyHealth = GetComponent<New_Enemy_Health>();
     }
 
     void OnTriggerStay(Collider other)
@@ -49,15 +51,23 @@ public class BowmanMovement : MonoBehaviour
     {
         anim.SetFloat(hash.enemySpeed, 0f);
         nav.speed = 0f;
-        transform.LookAt(player.transform);
+        if (enemyHealth.currentHealth > 0)
+        {
+            transform.LookAt(player.transform);
+        }
+
     }
 
     void MovementManager()
     {
-        nav.SetDestination(player.position);
-        anim.SetFloat(hash.enemySpeed, 1.25f);
-        nav.speed = anim.GetFloat(hash.enemySpeed);       
+        if (enemyHealth.currentHealth > 0)
+        {
+            nav.SetDestination(player.position);
+            anim.SetFloat(hash.enemySpeed, 1.25f);
+            nav.speed = anim.GetFloat(hash.enemySpeed);
+        }
     }
+
 
 }
 
