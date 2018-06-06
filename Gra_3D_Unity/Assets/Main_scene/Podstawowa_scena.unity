@@ -6712,7 +6712,6 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   healthBar: {fileID: 1137900280}
-  healthBarBG: {fileID: 1275781004}
 --- !u!114 &518165342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18870,7 +18869,6 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   healthBar: {fileID: 0}
-  healthBarBG: {fileID: 0}
 --- !u!1 &1416129254
 GameObject:
   m_ObjectHideFlags: 0
@@ -23829,7 +23827,6 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   healthBar: {fileID: 0}
-  healthBarBG: {fileID: 0}
 --- !u!1 &1794894418
 GameObject:
   m_ObjectHideFlags: 0
@@ -26638,7 +26635,6 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   healthBar: {fileID: 0}
-  healthBarBG: {fileID: 0}
 --- !u!1001 &2084190857
 Prefab:
   m_ObjectHideFlags: 0
@@ -26745,7 +26741,6 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   healthBar: {fileID: 0}
-  healthBarBG: {fileID: 0}
 --- !u!114 &2087171989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26967,7 +26962,6 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   healthBar: {fileID: 0}
-  healthBarBG: {fileID: 0}
 --- !u!1 &2092927843
 GameObject:
   m_ObjectHideFlags: 0
@@ -27439,7 +27433,6 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   healthBar: {fileID: 0}
-  healthBarBG: {fileID: 0}
 --- !u!114 &2118692163
 MonoBehaviour:
   m_ObjectHideFlags: 0
