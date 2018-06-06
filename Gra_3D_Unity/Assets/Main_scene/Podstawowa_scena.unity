@@ -19943,7 +19943,7 @@ GameObject:
   - component: {fileID: 1523785491}
   - component: {fileID: 1523785490}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19962,10 +19962,10 @@ RectTransform:
   m_Father: {fileID: 1015333252}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300.51, y: -162.79}
-  m_SizeDelta: {x: 160, y: 20.13}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 90, y: 40}
+  m_SizeDelta: {x: 160, y: 20.130005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1523785490
 MonoBehaviour:
@@ -26194,7 +26194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 82.35, y: 11.82}
+  m_AnchoredPosition: {x: 90, y: 20}
   m_SizeDelta: {x: 164.71, y: 23.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052679513
