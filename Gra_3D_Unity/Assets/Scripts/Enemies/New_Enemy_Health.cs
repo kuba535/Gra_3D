@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class New_Enemy_Health : MonoBehaviour
 {
-    public int startingHealth = 100;
+    public int startingHealth = 50;
     public int currentHealth;
 
     public float sinkSpeed = 2.5f;
@@ -22,6 +22,10 @@ public class New_Enemy_Health : MonoBehaviour
 
     [Header("Unity Stuff")]
     public Image healthBar;
+    public Image healthBarBG;
+    public float healthBar_factor;
+    public float f_currenthealth;
+    public float f_startinghealth;
 
 
     void Awake()
@@ -31,6 +35,7 @@ public class New_Enemy_Health : MonoBehaviour
         capsuleCollider = GetComponent<CapsuleCollider>();
 
         currentHealth = startingHealth;
+        f_startinghealth = startingHealth;
 
         isDead = false;
         damaged = false;
@@ -45,6 +50,7 @@ public class New_Enemy_Health : MonoBehaviour
             transform.Translate(-Vector3.up * sinkSpeed * Time.deltaTime);
         }
         damaged = false;
+        
     }
 
     public void TakeDamage(int amount)
@@ -55,9 +61,12 @@ public class New_Enemy_Health : MonoBehaviour
         damaged = true;
 
         currentHealth -=amount;
-        healthBar.fillAmount = currentHealth / 100f;
+        f_currenthealth = currentHealth;
+        healthBar_factor = f_currenthealth / f_startinghealth;
+        
+        healthBar.fillAmount = healthBar_factor;
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Death();
         }
@@ -70,6 +79,7 @@ public class New_Enemy_Health : MonoBehaviour
         capsuleCollider.isTrigger = true;
 
         ScoreManager.score += scoreValue;
+        Destroy(healthBarBG.gameObject);
 
         anim.SetTrigger("Die");
     }

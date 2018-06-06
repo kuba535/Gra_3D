@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour
     public int startingHealth = 100;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
     [Header("Unity Stuff")]
+    public float f_startingHealth;
+    public float f_currentHealth;
 
     public Image playerHealthBar;
    // public Slider healthSlider;                                 // Reference to the UI's health bar.
@@ -34,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
 
         // Set the initial health of the player.
         currentHealth = startingHealth;
+        f_startingHealth = startingHealth;
     }
 
 
@@ -65,9 +68,10 @@ public class PlayerHealth : MonoBehaviour
 
         // Reduce the current health by the damage amount.
         currentHealth -= amount;
+        f_currentHealth = currentHealth;
 
         //set the health bar the value of current health
-        playerHealthBar.fillAmount = currentHealth / 100f;
+        playerHealthBar.fillAmount = f_currentHealth / f_startingHealth;
 
         // Set the health bar's value to the current health.
       //  healthSlider.value = currentHealth;
