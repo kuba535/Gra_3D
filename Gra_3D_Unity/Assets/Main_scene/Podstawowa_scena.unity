@@ -5448,6 +5448,8 @@ GameObject:
   - component: {fileID: 448508415}
   - component: {fileID: 448508414}
   - component: {fileID: 448508417}
+  - component: {fileID: 448508418}
+  - component: {fileID: 448508419}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5466,7 +5468,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 7ac153a2453865846a65e84eb8441e1f, type: 3}
   m_Controller: {fileID: 9100000, guid: b51f652bb8dbfd543ae7ef9679a6d646, type: 2}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -5556,6 +5558,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  movement: {x: 0, y: 0, z: 0}
+  playerRigidbody: {fileID: 0}
+  floorMask: 0
+  camRayLength: 100
 --- !u!114 &448508417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5570,6 +5576,30 @@ MonoBehaviour:
   startingHealth: 100
   currentHealth: 0
   playerHealthBar: {fileID: 2054010535}
+--- !u!114 &448508418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448508409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94211255b35375447ab9bedc32adbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+--- !u!114 &448508419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448508409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8820dae83b5d96e4aaefcf7a75c32250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1001 &448768822
 Prefab:
   m_ObjectHideFlags: 0
